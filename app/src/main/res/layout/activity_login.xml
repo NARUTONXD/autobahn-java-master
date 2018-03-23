@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E6774E"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Autobahn Server Hostname / Port"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/lightgrey" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/hostname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/darkgrey" />
+
+                    <EditText
+                        android:id="@+id/port"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:inputType="number"
+                        android:textColor="@color/darkgrey" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/start"
+                    android:layout_width="100dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center"
+                    android:bufferType="editable"
+                    android:text="Button" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/statusline"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text="Ready."
+                android:textColor="@color/lightgrey"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="18229863760"
+                android:textColor="@color/darkgrey" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="123456"
+                android:textColor="@color/darkgrey" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="100dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center"
+                    android:bufferType="editable"
+                    android:text="登录" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message to echo"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/lightgrey" />
+
+            <EditText
+                android:id="@+id/sendto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="15116193179"
+                android:textColor="@color/darkgrey" />
+
+            <EditText
+                android:id="@+id/msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Hello, world!"
+                android:textColor="@color/darkgrey" />
+
+            <Button
+                android:id="@+id/sendMsg"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:layout_margin="16dip"
+                android:bufferType="editable"
+                android:text="Send" />
+            <TextView
+                android:text="信息"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray0"/>
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center"
+        android:bufferType="editable"
+        android:text="跳转||注销" />
+</LinearLayout>

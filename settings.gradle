@@ -1,0 +1,1 @@
+include 'app', ':autobahn', ':easeui', ':mylibrary', ':picture_library', ':ucrop'

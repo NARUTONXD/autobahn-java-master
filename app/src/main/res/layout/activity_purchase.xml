@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/content_head__askforleave_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_star1"
+                    style="@style/askforleave"
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    style="@style/askforleave"
+                    android:layout_toRightOf="@id/iv_star1"
+                    android:text="申请单位" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_askforleave_start"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_star2"
+                    style="@style/askforleave"
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    style="@style/askforleave"
+                    android:layout_toRightOf="@id/iv_star2"
+                    android:text="申请人" />
+
+                <TextView
+                    android:id="@+id/tv_askforleave_starttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="32dp"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_askforleave_end"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_star3"
+                    style="@style/askforleave"
+
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    style="@style/askforleave"
+
+                    android:layout_toRightOf="@id/iv_star3"
+                    android:text="手机号码" />
+
+                <TextView
+                    android:id="@+id/tv_askforleave_endtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="32dp"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_horizontal_margin"
+                android:background="@color/main_background" />
+
+            <RelativeLayout
+                android:id="@+id/rl_askforleave_days"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_star4"
+                    style="@style/askforleave"
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    style="@style/askforleave"
+                    android:layout_toRightOf="@id/iv_star4"
+                    android:text="申请事由" />
+
+                <EditText
+                    android:id="@+id/tv_askforleave_totaltime"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/translator"
+                    android:digits="1234567890."
+                    android:gravity="end|center_vertical"
+                    android:hint="请输入天数"
+                    android:inputType="numberDecimal"
+                    android:paddingRight="32dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_horizontal_margin"
+                android:background="@color/main_background" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_star5"
+                    style="@style/askforleave"
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    android:id="@+id/tv_askforleave_reason"
+                    style="@style/askforleave"
+                    android:layout_toRightOf="@id/iv_star5"
+                    android:text="采购类型" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="32dp"
+                android:text="采购明细" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_star6"
+                    style="@style/askforleave"
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    style="@style/askforleave"
+                    android:layout_toRightOf="@id/iv_star6"
+                    android:text="采购（建议价格）" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_star7"
+                    style="@style/askforleave"
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    style="@style/askforleave"
+                    android:layout_toRightOf="@id/iv_star7"
+                    android:text="名称" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_star8"
+                    style="@style/askforleave"
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    style="@style/askforleave"
+                    android:layout_toRightOf="@id/iv_star8"
+                    android:text="规格" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_star9"
+                    style="@style/askforleave"
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    style="@style/askforleave"
+                    android:layout_toRightOf="@id/iv_star9"
+                    android:text="数量" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_star10"
+                    style="@style/askforleave"
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    style="@style/askforleave"
+                    android:layout_toRightOf="@id/iv_star10"
+                    android:text="计量单位" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_star11"
+                    style="@style/askforleave"
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    style="@style/askforleave"
+                    android:layout_toRightOf="@id/iv_star11"
+                    android:text="供应商所在公司名称" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_star12"
+                    style="@style/askforleave"
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    style="@style/askforleave"
+                    android:layout_toRightOf="@id/iv_star12"
+                    android:text="供应商全称" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_star13"
+                    style="@style/askforleave"
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    style="@style/askforleave"
+                    android:layout_toRightOf="@id/iv_star13"
+                    android:text="手机号码" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="32dp"
+                android:text="如需采购多种产品，请点击“增加明细”" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="增加明细"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_star14"
+                    style="@style/askforleave"
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    style="@style/askforleave"
+                    android:layout_toRightOf="@id/iv_star14"
+                    android:text="单据类型" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_star15"
+                    style="@style/askforleave"
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    style="@style/askforleave"
+                    android:layout_toRightOf="@id/iv_star15"
+                    android:text="是否含税" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_star16"
+                    style="@style/askforleave"
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    style="@style/askforleave"
+                    android:layout_toRightOf="@id/iv_star16"
+                    android:text="预估金额" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="center_vertical"
+                android:text="附件"
+                android:textColor="@color/black" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_askforleave_certainpicture"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/activity_horizontal_margin" />
+
+                    <ImageView
+                        android:id="@+id/iv_askforleace_fujian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="8dp"
+                        android:src="@mipmap/ic_askforleave_add" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_horizontal_margin"
+                android:background="@color/main_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:src="@mipmap/ic_askforleave_star" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="@string/askforleave_comander"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!--<HorizontalScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:scrollbars="none">-->
+
+            <LinearLayout
+                android:id="@+id/lv_person_contain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/ll_askforleave_certainperson"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingLeft="32dp"-->
+                <!--android:paddingRight="32dp" />-->
+
+            </LinearLayout>
+            <!--</HorizontalScrollView>-->
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/btn_sendmessage"
+                android:text="@string/btn_submit"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

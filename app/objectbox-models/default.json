@@ -1,0 +1,225 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:3593895055587091437",
+      "lastPropertyId": "16:4445618244406435815",
+      "name": "Note",
+      "properties": [
+        {
+          "id": "1:8084552446800127370",
+          "name": "id"
+        },
+        {
+          "id": "6:1519044238558776411",
+          "name": "flow_note_id"
+        },
+        {
+          "id": "7:409823318368509754",
+          "name": "arr_complayid"
+        },
+        {
+          "id": "8:5719908440334315663",
+          "name": "arr_departmentid"
+        },
+        {
+          "id": "9:1374157459656797807",
+          "name": "arr_tdepartmentid"
+        },
+        {
+          "id": "10:6103642428079030093",
+          "name": "arr_position_id"
+        },
+        {
+          "id": "11:4392146158820344758",
+          "name": "arr_pname"
+        },
+        {
+          "id": "12:2114906865448187118",
+          "name": "arr_tel"
+        },
+        {
+          "id": "13:3323593051180464569",
+          "name": "html_css"
+        },
+        {
+          "id": "14:4109897543568621056",
+          "name": "flow_no"
+        },
+        {
+          "id": "15:1628170317566431157",
+          "name": "rankid"
+        },
+        {
+          "id": "16:4445618244406435815",
+          "name": "PROCESS_COUNT"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:7604175614122958077",
+      "lastPropertyId": "12:5647875269540289035",
+      "name": "SubmitNote",
+      "properties": [
+        {
+          "id": "1:6008979481282447747",
+          "name": "id"
+        },
+        {
+          "id": "2:630368283173540453",
+          "name": "html_css"
+        },
+        {
+          "id": "3:6732361497327743980",
+          "name": "flow_no"
+        },
+        {
+          "id": "4:3845735591117816479",
+          "name": "rankid"
+        },
+        {
+          "id": "5:8786895487804826951",
+          "name": "flow_note_id"
+        },
+        {
+          "id": "6:895059541727628048",
+          "name": "arr_complayid"
+        },
+        {
+          "id": "7:7904729287430773403",
+          "name": "arr_departmentid"
+        },
+        {
+          "id": "8:1390369372243397373",
+          "name": "arr_tdepartmentid"
+        },
+        {
+          "id": "9:42511161731968821",
+          "name": "arr_position_id"
+        },
+        {
+          "id": "10:2109241445116410513",
+          "name": "arr_pname"
+        },
+        {
+          "id": "11:9141793747248428625",
+          "name": "arr_tel"
+        },
+        {
+          "id": "12:5647875269540289035",
+          "name": "PROCESS_COUNT"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:6584776477781399456",
+      "lastPropertyId": "16:1607613501506914800",
+      "name": "MessageDB",
+      "properties": [
+        {
+          "id": "1:7795999417433772250",
+          "name": "id"
+        },
+        {
+          "id": "2:9026850461525706702",
+          "name": "type"
+        },
+        {
+          "id": "3:6583760494118866871",
+          "name": "val"
+        },
+        {
+          "id": "4:2305064338451138660",
+          "name": "ntel"
+        },
+        {
+          "id": "5:3963677048051381204",
+          "name": "to_ntel"
+        },
+        {
+          "id": "6:86103193709955988",
+          "name": "curr_approve_name"
+        },
+        {
+          "id": "7:1390744848163957507",
+          "name": "store_msg_leixing"
+        },
+        {
+          "id": "8:719021433054108876",
+          "name": "msg_sendtime"
+        },
+        {
+          "id": "9:7322031919978759304",
+          "name": "apply_name"
+        },
+        {
+          "id": "10:8857756593899580447",
+          "name": "flow_ptype"
+        },
+        {
+          "id": "11:6786913379017612058",
+          "name": "apply_no"
+        },
+        {
+          "id": "12:1772880868847838486",
+          "name": "curr_note_id"
+        },
+        {
+          "id": "13:458864495148290040",
+          "name": "next_note_id"
+        },
+        {
+          "id": "14:6490996076530682392",
+          "name": "approve_res"
+        },
+        {
+          "id": "15:9085919013046970512",
+          "name": "approve_rea"
+        },
+        {
+          "id": "16:1607613501506914800",
+          "name": "store_msg_id"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "4:6584776477781399456",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [
+    4670304698845578038
+  ],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    548192261174560543,
+    6027827372735861190,
+    8552841759376705131,
+    7422432378006092509,
+    2652734310095645551,
+    1956342702800450896,
+    7634996464269860297,
+    5852621689991836604,
+    7410137611340166246,
+    2699192786207403723,
+    2275966864997417325,
+    1769610301115140506,
+    2966279623171764831,
+    6029452176724807043,
+    2640997773894201725,
+    8573020906695783113,
+    2664824956339511008,
+    8024118354121490756,
+    5738143014915742057,
+    1138405511124540934
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

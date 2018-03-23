@@ -1,0 +1,41 @@
+// Set global platform properties.
+project.ext {
+    PLATFORM = project.properties.get('buildPlatform', 'android')
+    PLATFORM_ANDROID = 'android'
+    PLATFORM_NETTY = 'netty'
+    PLUGIN_ANDROID_APP = 'com.android.application'
+    PLUGIN_ANDROID_LIB = 'com.android.library'
+    PLUGIN_JAVA_APP = 'application'
+    PLUGIN_JAVA_LIB = 'java-library'
+    IS_ANDROID = PLATFORM == PLATFORM_ANDROID
+    BUILD_LEGACY = project.properties.get('buildLegacy', false)
+}
+
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://maven.google.com'
+        }
+    }
+    dependencies {
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+    // Android specific dependencies.
+    if (project.properties.get('buildPlatform', 'android') == 'android') {
+        dependencies {
+            classpath 'com.android.tools.build:gradle:3.0.1'
+            classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://maven.google.com'
+        }
+    }
+}
